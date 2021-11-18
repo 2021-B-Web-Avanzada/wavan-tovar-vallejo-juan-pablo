@@ -79,7 +79,7 @@ if(undefined){
 
 const adrian = {
     nombre: "Adrian",
-    false: 'Eguez',
+    apellido: 'Eguez',
     edad: 32,
     hijos: null,
     zapatos: undefined,
@@ -90,3 +90,69 @@ const adrian = {
     },
     mascotas: ['Cachetes','Pequitas','Panda'],
 }
+
+// Acceder a las propiedades del objeto
+
+adrian.nombre; //"Adrian"
+adrian.apellido; //"Eguez"
+adrian["nombre"]; //"Adrian"
+console.log(adrian);
+adrian.nombre = "Vicente";
+console.log(adrian);
+adrian["nombre"] = "Adrian";
+adrian.sueldo; // undefined
+console.log(adrian.sueldo);
+adrian.sueldo = 1.2;
+console.log(adrian.sueldo); // 1.2
+adrian["gastos"] = 0.8;
+console.log(adrian.gastos); // 0.8
+adrian.nombre = undefined;
+console.log(adrian);
+console.log(Object.keys(adrian));
+console.log(Object.values(adrian));
+delete adrian.nombre; // Eliminar la llave "nombre"
+console.log(adrian);
+
+//Variables por valor o referencia?
+//Variables por valor en JS son las primitivas
+let edadAdrian = 32;
+let edadVicente = edadAdrian; //Guardamos una primitiva en otra variable
+console.log(edadAdrian); // 32
+console.log(edadVicente); //32
+edadAdrian = edadAdrian + 1;
+console.log(edadAdrian); //33
+console.log(edadVicente); //32
+
+//Variables por referencia: object({},{})
+// let rafael = {
+//     nombre: "Rafael"
+// };
+// let lenin = rafael;
+// console.log(rafael);
+// console.log(lenin);
+// lenin.nombre = "Lenin";
+// console.log(rafael);
+// console.log(lenin);
+// delete rafael.nombre;
+// console.log(rafael);
+// console.log(lenin);
+
+let rafael = {
+    nombre: "Rafael"
+}
+let lenin = Object.assign({},rafael);
+console.log(rafael);
+console.log(lenin);
+lenin.nombre = "Lenin";
+delete rafael.nombre;
+console.log(rafael);
+console.log(lenin);
+
+let arregloNumeros = [1,2,3,4,5];
+let arregloClonado = Object.assign([],arregloNumeros);
+console.log(arregloNumeros);
+console.log(arregloClonado);
+arregloNumeros[0]=200;
+arregloClonado[0]=100;
+console.log(arregloNumeros);
+console.log(arregloClonado);
