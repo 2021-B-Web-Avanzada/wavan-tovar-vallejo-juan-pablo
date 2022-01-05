@@ -1,0 +1,21 @@
+<app-barra-busqueda></app-barra-busqueda>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-auto p-0" style=" position: fixed; z-index: 1">
+      <app-menu-plegable></app-menu-plegable>
+    </div>
+    <div class="col-auto p-0" style="z-index: 0">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col p-0 " style="z-index: 0">
+      <app-novedades></app-novedades>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3 py-4 px-2" *ngFor="let video of arregloVideos;let i = index">
+            <app-video [video]="video" ></app-video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

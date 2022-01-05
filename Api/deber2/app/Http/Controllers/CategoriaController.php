@@ -16,7 +16,7 @@ class CategoriaController extends Controller
 
     public function show(Categoria $categoria)
     {
-        return $categoria->with('videojuegos')->get();
+        return Categoria::with('videojuegos')->find($categoria->id);
     }
 
     public function store(Request $request)

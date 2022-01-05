@@ -1,1 +1,1 @@
-[{"nombre":"Survival Horro","año":1965,"juego":"Silent Hill","ga":true,"clasificacion":"18+","id":1,"videojuegos":[{"nombre":"Silent Hill","ventas":1854624,"precio":60,"plataforma":"PS4","online":false,"id":2}]}]
+[{"nombre":"FPS","año":2005,"juego":"Medall of Honor","ga":true,"clasificacion":"18+","id":2,"videojuegos":[]}]

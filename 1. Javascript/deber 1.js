@@ -342,21 +342,21 @@ function eliminar(contenido) {
 
 function crearVideojuego(nuevoContenido, id) {
     listar().then((contenido) => {
-        elementos = contenido.find((fruta) => fruta.id == id).videojuegos;
+        elementos = contenido.find((juego) => juego.id == id).videojuegos;
         if (elementos.at(-1)) {
             nuevoContenido['id'] = elementos.at(-1)['id'] + 1;
         } else {
             nuevoContenido['id'] = 1;
         }
         elementos.push(nuevoContenido);
-        contenido.find((fruta) => fruta.id == id).videojuegos = elementos;
+        contenido.find((juego) => juego.id == id).videojuegos = elementos;
         return escribirArchivo(JSON.stringify(contenido));
     })
 }
 
 function actualizarVideojuego(contenido, id) {
     listar().then((contenidoactual) => {
-        elementos = contenidoactual.find((fruta) => fruta.id == id).videojuegos;
+        elementos = contenidoactual.find((juego) => juego.id == id).videojuegos;
         elementos.forEach((element) => {
             if (element['id'] === contenido['id']) {
                 element['nombre'] = contenido['nombre'];
@@ -367,20 +367,20 @@ function actualizarVideojuego(contenido, id) {
             }
 
         })
-        contenidoactual.find((fruta) => fruta.id == id).videojuegos = elementos
+        contenidoactual.find((juego) => juego.id == id).videojuegos = elementos
         return escribirArchivo(JSON.stringify(contenidoactual));
     })
 }
 
 function eliminarVideojuego(contenido, id) {
     listar().then((contenidoactual) => {
-        elementos = contenidoactual.find((fruta) => fruta.id == id).videojuegos;
+        elementos = contenidoactual.find((juego) => juego.id == id).videojuegos;
         elementos.forEach((element) => {
             if (element['id'] === contenido['id']) {
                 elementos.splice(elementos.indexOf(element), 1);
             }
         })
-        contenidoactual.find((fruta) => fruta.id == id).videojuegos = elementos
+        contenidoactual.find((juego) => juego.id == id).videojuegos = elementos
         return escribirArchivo(JSON.stringify(contenidoactual));
     })
 }
