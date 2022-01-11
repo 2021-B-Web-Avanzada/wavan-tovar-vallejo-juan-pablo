@@ -10,15 +10,13 @@ const routes: Routes = [{
 },{
   path: 'explorar',
   component: RutaExplorarComponent,
-}, {
+},
+  {
   path: '',
   redirectTo: '/inicio',
   pathMatch: 'full',
-},
-  {
-    path: '**',
-    component: RutaNotFoundComponent,
-  }];
+}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

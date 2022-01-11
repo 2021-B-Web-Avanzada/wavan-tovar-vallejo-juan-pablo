@@ -61,7 +61,7 @@ export class RutaInicioComponent implements OnInit {
       cantidadVistas: "53.894",
       fecha: "4 días",
       linkMiniatura: "https://i.ytimg.com/vi/jPe9y3njf-Y/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQSTmQ_mOPFZ7v-QXERxNszmnAaw",
-      linkFotoPerfil: "https://i9.ytimg.com/s_p/OLAK5uy_nJQAV_dqOlxPwWKfc5z2b44SwEW_bmvRk/sddefault.jpg?sqp=CPCM0o4Gir7X7AMGCNLrofsF&rs=AOn4CLDSK5lj5v_RroT05EdxTgfVF8OWjg&v=1600681426",
+      linkFotoPerfil: "https://yt3.ggpht.com/ytc/AKedOLRcKGIH-eFyb_5tmMUsAyo_zpNQqwA9K76FBaZYtg=s176-c-k-c0x00ffffff-no-rj-mo",
     },
     {
       nombre: "Nuevas GPUs? Veamos la presentación de NVIDIA en CES 2022!!",
@@ -100,7 +100,7 @@ export class RutaInicioComponent implements OnInit {
       cantidadVistas: "81.926",
       fecha: "12 días",
       linkMiniatura: "https://i.ytimg.com/vi/tV3-G-cdPik/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAgQmpzseZ7YZlbluI3-RwMp2bCBA",
-      linkFotoPerfil: "https://i9.ytimg.com/s_p/OLAK5uy_nJQAV_dqOlxPwWKfc5z2b44SwEW_bmvRk/sddefault.jpg?sqp=CPCM0o4Gir7X7AMGCNLrofsF&rs=AOn4CLDSK5lj5v_RroT05EdxTgfVF8OWjg&v=1600681426",
+      linkFotoPerfil: "https://yt3.ggpht.com/ytc/AKedOLRcKGIH-eFyb_5tmMUsAyo_zpNQqwA9K76FBaZYtg=s176-c-k-c0x00ffffff-no-rj-mo",
     },
   ]
 

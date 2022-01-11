@@ -1,10 +1,10 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light py-1">
   <div class="container-fluid p-0">
     <div class="col-3 p-0">
       <button class="py-1 px-4 btn btn-outline-light" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
               aria-expanded="false" aria-label="Toggle navigation">
-        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class=" style-scope yt-icon"
              style="pointer-events: none; display: block; width: 25px;">
           <g class="style-scope yt-icon">
             <path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon"></path>
@@ -50,7 +50,7 @@
         </svg>
       </a>
     </div>
-    <div class="col-6 input-group w-50">
+    <div class=" input-group w-50">
       <input type="text" class="col-2 form-control" placeholder="Buscar">
       <button class="py-0 input-group-text btn btn-outline-secondary px-4">
         <i class="bi bi-search"></i>
@@ -59,17 +59,93 @@
         <i class="bi bi-mic-fill "></i>
       </button>
     </div>
-    <div class="col-3 text-end">
-      <button class="py-0 btn btn-outline-light mx-1">
-        <i class="bi bi-arrow-bar-up "></i>
-      </button>
-      <button class="py-0 btn btn-outline-light mx-1">
-        <i class=" bi bi-grid-3x3-gap "></i>
-      </button>
-      <button class="py-0 btn btn-outline-light mx-1">
-        <i class="bi bi-bell  "></i>
-      </button>
-      <img class="rounded-circle mx-3 me-5" src="assets/unnamed.png" width="10%" alt="">
+    <div class="col-2">
+      <ul class="navbar-nav ">
+        <li class="nav-item mx-1">
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-arrow-bar-up "></i></a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link" href="#"><i class=" bi bi-grid-3x3-gap "></i></a>
+        </li>
+        <li class="nav-item mx-1 dropstart">
+          <a class="nav-link" href="#" id="" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false"><i class="bi bi-bell  "></i></a>
+          <ul class="dropdown-menu overflow-auto p-0 container-fluid" style="width: 500px;max-height: 600px"
+              aria-labelledby="navbarDropdownMenuLink">
+            <div class="container-fluid row py-3">
+              <div class="col">
+                <p class="m-0">Notificaciones</p>
+              </div>
+              <div class="col text-end">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                     class="style-scope yt-icon"
+                     style="pointer-events: none; width: 25px;">
+                  <g class="style-scope yt-icon">
+                    <path
+                      d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,8c-2.21,0-4,1.79-4,4s1.79,4,4,4s4-1.79,4-4 S14.21,8,12,8L12,8z M13.22,3l0.55,2.2l0.13,0.51l0.5,0.18c0.61,0.23,1.19,0.56,1.72,0.98l0.4,0.32l0.5-0.14l2.17-0.62l1.22,2.11 l-1.63,1.59l-0.37,0.36l0.08,0.51c0.05,0.32,0.08,0.64,0.08,0.98s-0.03,0.66-0.08,0.98l-0.08,0.51l0.37,0.36l1.63,1.59l-1.22,2.11 l-2.17-0.62l-0.5-0.14l-0.4,0.32c-0.53,0.43-1.11,0.76-1.72,0.98l-0.5,0.18l-0.13,0.51L13.22,21h-2.44l-0.55-2.2l-0.13-0.51 l-0.5-0.18C9,17.88,8.42,17.55,7.88,17.12l-0.4-0.32l-0.5,0.14l-2.17,0.62L3.6,15.44l1.63-1.59l0.37-0.36l-0.08-0.51 C5.47,12.66,5.44,12.33,5.44,12s0.03-0.66,0.08-0.98l0.08-0.51l-0.37-0.36L3.6,8.56l1.22-2.11l2.17,0.62l0.5,0.14l0.4-0.32 C8.42,6.45,9,6.12,9.61,5.9l0.5-0.18l0.13-0.51L10.78,3H13.22 M14,2h-4L9.26,4.96c-0.73,0.27-1.4,0.66-2,1.14L4.34,5.27l-2,3.46 l2.19,2.13C4.47,11.23,4.44,11.61,4.44,12s0.03,0.77,0.09,1.14l-2.19,2.13l2,3.46l2.92-0.83c0.6,0.48,1.27,0.87,2,1.14L10,22h4 l0.74-2.96c0.73-0.27,1.4-0.66,2-1.14l2.92,0.83l2-3.46l-2.19-2.13c0.06-0.37,0.09-0.75,0.09-1.14s-0.03-0.77-0.09-1.14l2.19-2.13 l-2-3.46L16.74,6.1c-0.6-0.48-1.27-0.87-2-1.14L14,2L14,2z"
+                      class="style-scope yt-icon"></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <div class=" p-0 m-0 dropdown-divider"></div>
+            <li *ngFor="let notificacion of arregloNotificaciones;let i=index">
+              <a class="dropdown-item py-2" href="#">
+                <div class="row">
+                  <div class="col-2">
+                    <img width="50px" class="rounded-circle" [src]="notificacion.linkFotoPerfil">
+                  </div>
+                  <div class="col-7 p-0 text-wrap">
+                    <p class="mb-1" style="font-size: 14px">Recomendado: {{notificacion.nombre}}</p>
+                    <p style="font-size: 13px">hace {{notificacion.fecha}}</p>
+                  </div>
+                  <div class="col-3">
+                    <img width="80px" [src]="notificacion.linkMiniatura">
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar-brand dropstart px-3 mx-2">
+          <a class="nav-link p-0" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            <img class="rounded-circle m-0 " src="assets/unnamed.png" height="32px">
+          </a>
+          <ul class="dropdown-menu" style="width: 300px" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-auto pe-1">
+                      <img class="rounded-circle m-0 " src="assets/unnamed.png" height="40px">
+                    </div>
+                    <div class="col-8">
+                      <h6 style="display: inline-block">LCD_Juancho</h6><br>
+                      <a href="" class="text-decoration-none" style="font-size: 14px;color: #065fd4 !important">Gestionar
+                        tu cuenta de Google</a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li *ngFor="let opcion of arregloOpciones;let i=index">
+              <a class="dropdown-item py-2" href="#">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                     class="style-scope yt-icon"
+                     style="pointer-events: none; width: 25px;">
+                  <g class="style-scope yt-icon">
+                    <path [attr.d]="opcion.icono"></path>
+                  </g>
+                </svg>
+                <span class="ms-3" style="font-size: 14px">{{opcion.opcion}}</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

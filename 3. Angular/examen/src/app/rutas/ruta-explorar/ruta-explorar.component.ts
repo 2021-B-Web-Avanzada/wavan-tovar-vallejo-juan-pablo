@@ -33,7 +33,7 @@ export class RutaExplorarComponent implements OnInit {
       fecha: "8 meses",
       linkMiniatura: "https://i.ytimg.com/vi/jFu4iOw4pQU/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLArHF8iQovZawqbFk7rUxGJMy2fhA",
       linkFotoPerfil: "https://yt3.ggpht.com/ytc/AKedOLRfzGoxoAHoMPBRqCeS0vNon0v6qyVPpjTpohDN9w=s48-c-k-c0x00ffffff-no-rj",
-      descripcion:""
+      descripcion:"Sigueme para estar en contacto y sugerencias para próximos videos, puedes pedir tu canción favorita."
     },
     {
       nombre: "the best of Kate Bishop & Yelena Belova (Hawkeye)",
@@ -51,7 +51,7 @@ export class RutaExplorarComponent implements OnInit {
       fecha: "2 años",
       linkMiniatura: "https://i.ytimg.com/vi/a2LJtf6-kVI/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLASiWRNhF83ADEzRWz25DRjQ1bSVg",
       linkFotoPerfil: "https://yt3.ggpht.com/ytc/AKedOLSUI6ldTU8lZmlF3fZV7mxOsw_4UkcM-4q6Obkn0w=s88-c-k-c0x00ffffff-no-rj",
-      descripcion:""
+      descripcion:"Interpretada y compuesta por: Francisco García M. Portada de David Morales y Paul Mantra. ¡Usar Audífonos! 0:00 Sigo 0:35 Eco ..."
     },
     {
       nombre: "Jujutsu Kaisen 0: PELÍCULA | Tráiler Oficial (Sub. Español)",
@@ -60,7 +60,7 @@ export class RutaExplorarComponent implements OnInit {
       fecha: "3 días",
       linkMiniatura: "https://i.ytimg.com/vi/r0EJbhYz6-0/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBoTOwYr_33b82Y8w22ASZmo20TQQ",
       linkFotoPerfil: "https://yt3.ggpht.com/RyCnflFjcmUNUSa4G67krS6oPRyScGtu-O8_qCDHNG2YNuMFGJG8C87_MCTEODLTtXUIWxlALQ=s88-c-k-c0x00ffffff-no-rj",
-      descripcion:""
+      descripcion:"Jujutsu Kaisen 0: Película | Tráiler Oficial en 1080p subtítulos en español. Anime: Jujutsu Kaisen Estudio: MAPPA Copyright ..."
     },
     {
       nombre: "¿EL ARMA MAS ODIADA DE COD WARZONE? RECORTADAS DUALES OP",
@@ -69,7 +69,7 @@ export class RutaExplorarComponent implements OnInit {
       fecha: "6 horas",
       linkMiniatura: "https://i.ytimg.com/vi/Zv4byI3HDnM/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDtL-dlRvwM_0FAlFmaliOeCd75RQ",
       linkFotoPerfil: "https://yt3.ggpht.com/ytc/AKedOLSI0wIL46wujkMG2KXBh1eMTTJnZKJNfMAt_wTtzQ=s68-c-k-c0x00ffffff-no-rj",
-      descripcion:""
+      descripcion:"#CallOfDuty #Warzone #Pacific ¿EL ARMA MAS ODIADA DE COD WARZONE? RECORTADAS DUALES OP ¿EL ARMA MAS ..."
     },
     {
       nombre: "my name is giovanni giorgio",
