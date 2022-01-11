@@ -12,6 +12,9 @@ import { RutaAppComponent } from './rutas/ruta-app/ruta-app.component';
 import { RutaUsuarioComponent } from './rutas/ruta-usuario/ruta-usuario.component';
 import {AuthService} from "./services/auth/auth.service";
 import {EstaLogeadoGuard} from "./services/auth/esta-logeado.guard";
+import {EsAdministradorGuard} from "./services/auth/es-administrador.guard";
+import {BannerImagenesModule} from "./componentes/banner-imagenes/banner-imagenes.module";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,11 +29,14 @@ import {EstaLogeadoGuard} from "./services/auth/esta-logeado.guard";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BannerImagenesModule,
+    HttpClientModule
   ],
   providers: [
     AuthService,
-    EstaLogeadoGuard
+    EstaLogeadoGuard,
+    EsAdministradorGuard
   ],
   bootstrap: [AppComponent]
 })

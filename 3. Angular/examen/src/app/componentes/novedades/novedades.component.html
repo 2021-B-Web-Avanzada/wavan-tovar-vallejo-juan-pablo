@@ -1,0 +1,18 @@
+<nav class="navbar py-3 navbar-expand-lg navbar-light bg-light border-top border-bottom " style="position: sticky;top:54px">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="px-2">
+          <a class="nav-link px-2 py-1 border border-dark text-white rounded-pill" style="background: black;font-size: 14px" href="#">
+            Todo
+          </a>
+        </li>
+        <li class=" px-2" *ngFor="let novedades of arregloNovedades;let i = index">
+          <a class=" nav-link px-2 py-1 text-black  border border-secondary rounded-pill" href="#" style="background: #e7e7e7; font-size: 14px;">
+            {{novedades}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+

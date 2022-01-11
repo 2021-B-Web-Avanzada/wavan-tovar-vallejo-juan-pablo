@@ -1,0 +1,21 @@
+<h1 [ngStyle]="{ 'background-color':'#000',
+'color':color,
+'border':'solid 5px '+color}" >Hola desde banner</h1>
+
+<h2>{{nombre}} - {{apellido}}</h2>
+<p>Mascota: {{mascotas.cachetes.edad}}</p>
+
+<img [src]="urlImagen" alt="">
+<a [href]="url" target="_blank">Más información</a>
+
+<button (click)="ejecutarEventoClick()"
+        (blur)="ejecutarEventoBlur()"
+>
+  Event Binding
+</button>
+
+<p>{{fecha | date:'dd-MM-YYYY'}}</p>
+<p>{{sueldo | currency}}</p>
+<pre>
+  {{mascotas | json}}
+</pre>

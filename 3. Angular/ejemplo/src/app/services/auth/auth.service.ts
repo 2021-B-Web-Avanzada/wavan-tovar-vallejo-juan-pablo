@@ -6,7 +6,7 @@ export class AuthService{
   estaLogeado = false;
 
   roles = [
-    'admin',
+
     'supervisor',
     'usuario'
   ];
