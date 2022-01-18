@@ -15,6 +15,7 @@ export class VideoComponent implements OnInit {
     fecha: "",
     linkMiniatura: "",
     linkFotoPerfil: "",
+    tiempo:""
   }
 
   constructor() {

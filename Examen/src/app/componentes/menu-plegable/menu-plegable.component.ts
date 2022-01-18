@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-menu-plegable',
@@ -11,20 +11,24 @@ export class MenuPlegableComponent implements OnInit {
     {
       nombre: "Inicio",
       icono: "M12,4.33l7,6.12V20H15V14H9v6H5V10.45l7-6.12M12,3,4,10V21h6V15h4v6h6V10L12,3Z",
+      icono_activo:"M4,10V21h6V15h4v6h6V10L12,3Z",
       link: "/inicio"
     }, {
       nombre: "Explorar",
       icono: "M9.8,9.8l-3.83,8.23l8.23-3.83l3.83-8.23L9.8,9.8z M13.08,12.77c-0.21,0.29-0.51,0.48-0.86,0.54 c-0.07,0.01-0.15,0.02-0.22,0.02c-0.28,0-0.54-0.08-0.77-0.25c-0.29-0.21-0.48-0.51-0.54-0.86c-0.06-0.35,0.02-0.71,0.23-0.99 c0.21-0.29,0.51-0.48,0.86-0.54c0.35-0.06,0.7,0.02,0.99,0.23c0.29,0.21,0.48,0.51,0.54,0.86C13.37,12.13,13.29,12.48,13.08,12.77z M12,3c4.96,0,9,4.04,9,9s-4.04,9-9,9s-9-4.04-9-9S7.04,3,12,3 M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2 L12,2z",
+      icono_activo:"M11.23,13.08c-0.29-0.21-0.48-0.51-0.54-0.86c-0.06-0.35,0.02-0.71,0.23-0.99c0.21-0.29,0.51-0.48,0.86-0.54 c0.35-0.06,0.7,0.02,0.99,0.23c0.29,0.21,0.48,0.51,0.54,0.86c0.06,0.35-0.02,0.71-0.23,0.99c-0.21,0.29-0.51,0.48-0.86,0.54 c-0.07,0.01-0.15,0.02-0.22,0.02C11.72,13.33,11.45,13.25,11.23,13.08z M22,12c0,5.52-4.48,10-10,10S2,17.52,2,12 C2,6.48,6.48,2,12,2S22,6.48,22,12z M18.03,5.97L9.8,9.8l-3.83,8.23l8.23-3.83L18.03,5.97z",
       link: "/explorar"
     }, {
       nombre: "Youtube Shorts",
       icono: "M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33c-.77-.32-1.2-.5-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86l-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z",
+      icono_activo:"",
       link: "/"
     }, {
       nombre: "Suscripciones",
       icono: "M10,18v-6l5,3L10,18z M17,3H7v1h10V3z M20,6H4v1h16V6z M22,9H2v12h20V9z M3,10h18v10H3V10z",
+      icono_activo:"",
       link: "/"
-    },
+    }
   ]
 
   arregloPersonales = [
@@ -76,7 +80,7 @@ export class MenuPlegableComponent implements OnInit {
     },
     {
       nombre: "Suprapixel",
-      foto: "https://i9.ytimg.com/s_p/OLAK5uy_nJQAV_dqOlxPwWKfc5z2b44SwEW_bmvRk/sddefault.jpg?sqp=CPCM0o4Gir7X7AMGCNLrofsF&rs=AOn4CLDSK5lj5v_RroT05EdxTgfVF8OWjg&v=1600681426",
+      foto: "https://yt3.ggpht.com/ytc/AKedOLRcKGIH-eFyb_5tmMUsAyo_zpNQqwA9K76FBaZYtg=s176-c-k-c0x00ffffff-no-rj-mo",
     },
     {
       nombre: "Micahel Quesada",
@@ -95,6 +99,9 @@ export class MenuPlegableComponent implements OnInit {
       foto: "https://yt3.ggpht.com/Qz0J4TyKyUYy656cBqCUL6dUZJI6wfd4cG8bNoMZ6f5DH5wkqojgdsevCCe8zlTA961HgG17AA=s68-c-k-c0x00ffffff-no-rj",
     }
   ]
+
+  @Input()
+  nombre=""
 
   constructor() {
   }

@@ -2,10 +2,10 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-auto p-0" style=" position: fixed; z-index: 1">
-      <app-menu-plegable></app-menu-plegable>
+      <app-menu-plegable [nombre]="'Inicio'"></app-menu-plegable>
     </div>
     <div class="col-auto p-0" style="z-index: 0">
-      <app-sidebar></app-sidebar>
+      <app-sidebar [nombre]="'Inicio'" ></app-sidebar>
     </div>
     <div class="col p-0 " style="z-index: 0">
       <app-novedades></app-novedades>
