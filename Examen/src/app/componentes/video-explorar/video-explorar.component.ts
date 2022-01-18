@@ -15,7 +15,8 @@ export class VideoExplorarComponent implements OnInit {
     fecha: "",
     linkMiniatura: "",
     linkFotoPerfil: "",
-    descripcion:""
+    descripcion:"",
+    tiempo:""
   }
 
   constructor() { }

@@ -9,6 +9,7 @@ import {RutaUsuarioComponent} from "./rutas/ruta-usuario/ruta-usuario.component"
 import {RutaPostComponent} from "./rutas/ruta-post/ruta-post.component";
 import {EstaLogeadoGuard} from "./services/auth/esta-logeado.guard";
 import {EsAdministradorGuard} from "./services/auth/es-administrador.guard";
+import { RutaUsuarioPerfilComponent } from './rutas/ruta-usuario-perfil/ruta-usuario-perfil.component';
 
 // login
 // inicio
@@ -38,7 +39,12 @@ const routes: Routes = [
       {
         path:'usuario',
         component: RutaUsuarioComponent,
-      },{
+      },
+      {
+        path:'usuario:idUsuario',
+        component: RutaUsuarioPerfilComponent,
+      },
+      {
         path:'post',
         component: RutaPostComponent,
         canActivate: [EsAdministradorGuard]

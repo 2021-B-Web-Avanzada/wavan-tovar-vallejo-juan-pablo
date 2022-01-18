@@ -6,7 +6,15 @@
           <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
                style="pointer-events: none;width: 25px;">
             <g class="style-scope yt-icon">
-              <path [attr.d]="ruta.icono" class="style-scope yt-icon"></path>
+              <ng-container
+                *ngIf="nombre==ruta.nombre; then iconoActivo; else iconoNormal">
+              </ng-container>
+              <ng-template #iconoActivo>
+                <path [attr.d]="[ruta.icono_activo]" class="style-scope yt-icon"></path>
+              </ng-template>
+              <ng-template #iconoNormal>
+                <path [attr.d]="[ruta.icono]" class="style-scope yt-icon"></path>
+              </ng-template>
             </g>
           </svg>
           <span class="px-4 text-black" style="font-size: 14px">{{ruta.nombre}}</span>

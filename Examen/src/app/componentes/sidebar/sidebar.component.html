@@ -1,0 +1,25 @@
+<div class="sticky-top d-flex flex-column flex-shrink-0 bg-light overflow-hidden" style="position: sticky;top:54px">
+  <ul class="nav nav-flush flex-column text-center py-2">
+    <li class="nav-item" *ngFor="let ruta of arregloRutas;let i=index">
+      <a [routerLink]="[ruta.link]" class="nav-link py-2" aria-current="page" title={{ruta.nombre}}
+         data-bs-placement="right">
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+             style="pointer-events: none; width: 25px;">
+          <g class="style-scope yt-icon">
+            <ng-container
+              *ngIf="nombre==ruta.nombre; then iconoActivo; else iconoNormal">
+            </ng-container>
+            <ng-template #iconoActivo>
+              <path [attr.d]="[ruta.icono_activo]" class="style-scope yt-icon"></path>
+            </ng-template>
+            <ng-template #iconoNormal>
+              <path [attr.d]="[ruta.icono]" class="style-scope yt-icon"></path>
+            </ng-template>
+          </g>
+        </svg>
+        <p>{{ruta.nombre}}</p>
+      </a>
+    </li>
+  </ul>
+</div>
+

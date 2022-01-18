@@ -1,0 +1,6 @@
+.oculto {
+  display: none;
+}
+a:hover .oculto {
+  display: block;
+}
