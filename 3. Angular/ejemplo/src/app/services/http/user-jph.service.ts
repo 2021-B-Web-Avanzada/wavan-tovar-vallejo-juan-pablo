@@ -37,7 +37,7 @@ export class UserJphService {
       .get(url)
       .pipe(
         map(
-          (resultadoEnData:Object) => resultadoEnData as UserJphInterface[]
+          (resultadoEnData:Object) => resultadoEnData as UserJphInterface
         )
       )
   }
