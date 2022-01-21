@@ -18,7 +18,7 @@ export class RutaUsuarioComponent implements OnInit {
   constructor(
     private readonly userJhpService: UserJphService,
     private readonly router: Router,
-    private readonly activatedRoute: ActivatedRoute 
+    private readonly activatedRoute: ActivatedRoute
   ) {
   }
 
@@ -71,7 +71,10 @@ export class RutaUsuarioComponent implements OnInit {
       })
   }
 
-  gestionarUsuario(idUsuario:number){}
+  gestionarUsuario(idUsuario:number){
+    const ruta = ['app','usuario',idUsuario];
+    this.router.navigate(ruta);
+  }
 }
 function extras(commands: any, arg1: string[], extras: any, arg3: { queryParams: { name: string; }; }) {
   throw new Error('Function not implemented.');

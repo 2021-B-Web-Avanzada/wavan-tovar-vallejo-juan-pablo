@@ -41,7 +41,7 @@ const routes: Routes = [
         component: RutaUsuarioComponent,
       },
       {
-        path:'usuario:idUsuario',
+        path:'usuario/:idUsuario',
         component: RutaUsuarioPerfilComponent,
       },
       {
