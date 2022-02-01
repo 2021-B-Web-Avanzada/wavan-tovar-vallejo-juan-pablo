@@ -17,6 +17,14 @@ import {BannerImagenesModule} from "./componentes/banner-imagenes/banner-imagene
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RutaUsuarioPerfilComponent } from './rutas/ruta-usuario-perfil/ruta-usuario-perfil.component';
+import {InputSwitchModule} from "primeng/inputswitch";
+import {KnobModule} from "primeng/knob";
+import {SplitButton, SplitButtonModule} from "primeng/splitbutton";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatButtonModule} from "@angular/material/button";
+import { ModalEjemploComponent } from './componentes/modal-ejemplo/modal-ejemplo.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {NgbButtonsModule} from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
   declarations: [
@@ -28,7 +36,8 @@ import { RutaUsuarioPerfilComponent } from './rutas/ruta-usuario-perfil/ruta-usu
     RutaPostComponent,
     RutaAppComponent,
     RutaUsuarioComponent,
-    RutaUsuarioPerfilComponent
+    RutaUsuarioPerfilComponent,
+    ModalEjemploComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +45,14 @@ import { RutaUsuarioPerfilComponent } from './rutas/ruta-usuario-perfil/ruta-usu
     BannerImagenesModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InputSwitchModule,
+    KnobModule,
+    SplitButtonModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDialogModule,
+    NgbButtonsModule,
   ],
   providers: [
     AuthService,
