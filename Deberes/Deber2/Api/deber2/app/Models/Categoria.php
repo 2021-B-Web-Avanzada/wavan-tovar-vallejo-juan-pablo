@@ -12,7 +12,7 @@ class Categoria extends Model
     use HasFactory;
 
 
-    protected $fillable = ['nombre','año','juego','ga','clasificación'];
+    protected $fillable = ['nombre','anio','juego','ga','clasificacion'];
 
     public function videojuegos()
     {
