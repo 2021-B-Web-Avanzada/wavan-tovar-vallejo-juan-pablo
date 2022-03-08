@@ -10,6 +10,7 @@ import {RutaPostComponent} from "./rutas/ruta-post/ruta-post.component";
 import {EstaLogeadoGuard} from "./services/auth/esta-logeado.guard";
 import {EsAdministradorGuard} from "./services/auth/es-administrador.guard";
 import { RutaUsuarioPerfilComponent } from './rutas/ruta-usuario-perfil/ruta-usuario-perfil.component';
+import {RutaSalaComponent} from "./rutas/ruta-sala/ruta-sala.component";
 
 // login
 // inicio
@@ -33,6 +34,10 @@ const routes: Routes = [
     component: RutaInicioComponent,
   },
   {
+    path:':salaId/sala/:nombre',
+    component: RutaSalaComponent,
+  },
+  {
     path:'app',
     component: RutaAppComponent,
     children : [
@@ -41,7 +46,7 @@ const routes: Routes = [
         component: RutaUsuarioComponent,
       },
       {
-        path:'usuario/:idUsuario',
+        path:'usuario/:idUsuario/',
         component: RutaUsuarioPerfilComponent,
       },
       {

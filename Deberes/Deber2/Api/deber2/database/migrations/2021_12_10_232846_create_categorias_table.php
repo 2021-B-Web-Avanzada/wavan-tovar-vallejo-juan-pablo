@@ -20,10 +20,10 @@ class CreateCategoriasTable extends Migration
         Schema::create('categorias', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->integer('año');
+            $table->integer('anio');
             $table->string('juego');
             $table->boolean('ga');
-            $table->string('clasificación');
+            $table->string('clasificacion');
         });
     }
 

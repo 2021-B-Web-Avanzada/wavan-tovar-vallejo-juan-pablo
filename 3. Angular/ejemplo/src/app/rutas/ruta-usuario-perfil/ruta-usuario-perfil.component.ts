@@ -120,6 +120,7 @@ export class RutaUsuarioPerfilComponent implements OnInit {
   }
 
   prepararObjeto() {
+
     if(this.formGroup){
       const email = this.formGroup.get('email')
       if(email){
